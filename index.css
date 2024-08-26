@@ -73,6 +73,10 @@ body {
 button {
   color: black;
 }
+button:hover {
+  opacity: 0.9;
+}
+
 .number {
   background-color: rgb(75, 75, 75);
   color: white;
