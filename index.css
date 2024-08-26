@@ -66,27 +66,25 @@ body {
   position: absolute;
   width: 100%;
   bottom: 0;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
-.leftGrid {
-  display: grid;
-  grid-template-rows: repeat(1fr, 5);
+button {
+  color: black;
+}
+button:hover {
+  opacity: 0.9;
 }
 
-.options {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.number {
+  background-color: rgb(75, 75, 75);
+  color: white;
 }
 
-.numbers {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.numbersCol {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.operator {
+  background-color: orange;
+  color: white;
 }
 
 .zeroCol {
@@ -94,27 +92,6 @@ body {
   border-radius: 0 0 0 20px;
 }
 
-.operators {
-  display: grid;
-  flex-direction: column;
-}
-
 .equals {
   border-radius: 0 0 20px 0;
-}
-
-.operators button {
-  background-color: orange;
-}
-
-.numbers button {
-  background-color: rgb(131, 131, 131);
-}
-
-.options button {
-  background-color: rgb(75, 75, 75);
-}
-
-.fa-solid {
-  color: white;
 }
